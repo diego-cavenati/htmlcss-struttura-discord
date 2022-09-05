@@ -1,0 +1,158 @@
+/* #region Common Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+}
+/* #endregion Common Rules */
+
+/* #region flex grid */
+.container {
+    width: 80%;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.container-fluid{
+    width: 80%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+[class^='col-'] {
+    padding: 0 1rem;;
+}
+
+.col-1 {
+    width: calc((100% / 12) * 1);
+}
+
+.col-2 {
+    width: calc((100% / 12) * 2);
+}
+
+.col-3 {
+    width: calc((100% / 12) * 3);
+}
+
+.col-4 {
+    width: calc((100% / 12) * 4);
+}
+
+.col-5 {
+    width: calc((100% / 12) * 5);
+}
+
+.col-6 {
+    width: calc((100% / 12) * 6);
+}
+
+.col-7 {
+    width: calc((100% / 12) * 7);
+}
+
+.col-8 {
+    width: calc((100% / 12) * 8);
+}
+
+.col-9 {
+    width: calc((100% / 12) * 9);
+}
+
+.col-10 {
+    width: calc((100% / 12) * 10);
+}
+
+.col-11 {
+    width: calc((100% / 12) * 11);
+}
+
+.col-12 {
+    width: calc((100% / 12) * 12);
+}
+
+/* #endregion flex grid */
+
+/* #region Debug */
+.debug header {
+    background-color: aqua;
+}
+
+.debug > header [class^='col-'] {
+    height: 50px;
+    background-color: orange;
+    border: 2px solid black;
+}
+
+.debug > header .row {
+    padding: 1rem 0;
+}
+
+/* heroimage */
+.debug > main .heroimage {
+    height: 450px;
+    background-color: aquamarine;
+    padding: 3rem;
+}
+
+.debug > main .heroimage > .claim {
+    height: 350px;
+    background-color: royalblue;
+    margin: auto;
+    width: 800px;
+}
+
+/* contents */
+.debug > main .contents [class^='col-8'] {
+    height: 350px;
+    background-color: rebeccapurple;
+    border: 2px solid black;
+}
+
+.debug > main .contents [class^='col-4'] {
+    height: 350px;
+    background-color: pink;
+    border: 2px solid black;
+}
+
+.debug > main .row {
+    padding: 3rem 0;
+}
+
+.debug .gray {
+    background-color: gray;
+}
+
+/* action */
+.debug > main .action {
+    background-color: aquamarine;
+    padding: 3rem;
+}
+
+.debug > main .action > .end-claim {
+    height: 550px;
+    background-color: royalblue;
+    margin: auto;
+    width: 800px;
+}
+
+/* footer */
+.debug footer {
+    background-color: darkblue;
+}
+
+/* #endregion Debug */
