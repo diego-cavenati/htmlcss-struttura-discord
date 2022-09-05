@@ -170,9 +170,6 @@ img {
     padding: 1rem 0;
 }
 
-.debug .navigation_footer {
-
-}
 
 .debug .navigation_footer [class*='col-3'] {
     background-color: rgb(38, 145, 28);
